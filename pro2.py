@@ -1,6 +1,6 @@
 from itertools import combinations
-N,k=map(int,input().split())
-a=len(str(N))
-lst=list(combinations(str(N),a-k))
-lst=sorted(lst)
-print(*lst[0],sep='')
+Num,dig=map(int,input().split())
+l=len(str(Num))
+lst1=list(combinations(str(Num),l-dig))
+lst1=sorted(lst1)
+print(*lst1[0],sep='')
