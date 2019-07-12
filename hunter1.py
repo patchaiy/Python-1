@@ -1,7 +1,5 @@
 num=int(input())
-lis1=[]
-for i in range(num):
-    lis1.append(int(input()))
+lis1=list(map(int,input().split()))
 set1=set(lis1)
 count1=1
 ans=[]
