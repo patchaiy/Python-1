@@ -6,7 +6,6 @@ for i in range(num-1):
   if lis[i]>=lis[i+1]:
     count+=1
   else:
-    count+=1
     lis2.append(count)
     count=0
 m=max(lis2)
