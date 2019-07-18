@@ -1,5 +1,5 @@
 num=int(input())
-lis=list(map(int,input().split))
+lis=list(map(int,input().split()))
 lis2=[]
 count=0
 for i in range(num-1):
