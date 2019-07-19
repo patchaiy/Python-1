@@ -1,12 +1,13 @@
-num=int(input())
-lis=list(map(int,input().split()))
-lis2=[]
-count=0
-for i in range(num-1):
-  if lis[i]>=lis[i+1]:
-    count+=1
-  else:
-    lis2.append(count)
+z=input()
+l1=list(map(int,input().split()))
+maximum=0
+i=0
+while(i<len(l1)-1):
     count=0
-m=max(lis2)
-print(m)
+    while(i<len(l1)-1 and l1[i]<l1[i+1]):
+        count+=1
+        i+=1
+    if(count>maximum):
+        maximum=count
+    i+=1
+print(maximum+1)
